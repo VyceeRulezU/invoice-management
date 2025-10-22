@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Management</title>
+    <!-- Logo in Tab -->
+    <link rel="icon" type="image/svg+xml" href="./images/logo-icon.svg">
+    <link rel="stylesheet" href="invoice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    
+    <div class="body-wrapper">
+
+        <div class="nav-bar">
+
+            <div class="logo-button">
+                <a class="home" href="./index.html">
+                    <div class="logo">
+                        <img src="images/bloomify-logo.svg" alt="Bloomify Logo">
+                    </div>
+                </a>
+
+                <div class="expbtn">
+                    <img src="./images/Expand.svg" alt="Expand Btn">
+                </div>
+            </div>
+
+            <div class="navlinks">
+                
+                <div class="nav-tab">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <p>Dashboard</p>
+                </div>
+
+                <div class="nav-tab">
+                    <span class="material-symbols-outlined">chart_data</span>
+                    <p>Analytics</p>
+                </div>
+
+                <a class="page-anchor" href="./order.html">
+                    <div class="nav-tab">
+                        <span class="material-symbols-outlined">docs</span>
+                        <p>Order</p>
+                    </div>
+                </a>
+
+                <a class="page-anchor" href="./cart.html">
+                    <div class="nav-tab">
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                        <p>Cart</p>
+                    </div>
+                </a>
+
+                <a class="page-anchor" href="./invoice.html">
+                    <div class="nav-tab nav-tab-active">
+                        <span class="material-symbols-outlined">team_dashboard</span>
+                        <p>Invoice</p>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="content-wrapper">
+
+            <div class="title-bar">
+                <div class="title-container">
+                    <p class="page-heading">Invoice Management</p>
+                    <p class="page-sum">View, track, and manage all customer invoices from a single dashboard.</p>
+                </div>
+
+                <div class="profile-container">
+                    <a class="not-link" href="./service.html">
+                        <div class="notification">
+                            <img src="./images/Icon Frame.svg" alt="notification">
+                        </div>
+                    </a>
+
+                    <div class="profile-pic">
+                        <img src="images/animoji.svg" alt="Profile Picture">
+                    </div>
+                </div>
+
+                <div class="menu-button">
+                    <span class="material-symbols-outlined">menu</span>
+                </div>
+            </div>
+
+            <div class="mobile-nav">
+                <div class="nav-tab">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <p>Dashboard</p>
+                </div>
+
+                <div class="nav-tab">
+                    <span class="material-symbols-outlined">chart_data</span>
+                    <p>Analytics</p>
+                </div>
+
+                <a class="page-anchor" href="./order.html">
+                    <div class="nav-tab">
+                        <span class="material-symbols-outlined">docs</span>
+                        <p>Order</p>
+                    </div>
+                </a>
+
+                <a class="page-anchor" href="./cart.html">
+                    <div class="nav-tab">
+                        <span class="material-symbols-outlined">shopping_cart</span>
+                        <p>Cart</p>
+                    </div>
+                </a>
+
+                <a class="page-anchor" href="./invoice.html">
+                    <div class="nav-tab nav-tab-active">
+                        <span class="material-symbols-outlined">team_dashboard</span>
+                        <p>Invoice</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-title">
+                        <p class="card-name">Total Invoices</p>
+
+                        <span class="material-symbols-outlined desc-icon">receipt_long</span>
+
+                    </div>
+
+                    <div class="card-details">
+                        <div class="card-fig">
+                            <p>247</p>
+                        </div>
+
+                        <div class="card-chip">
+                            <p>+15</p>
+
+                            <span class="material-symbols-outlined">trending_up</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">
+                        <p class="card-name">Paid Invoice</p>
+
+                        <span class="material-symbols-outlined desc-icon-1">order_approve</span>
+                    </div>
+
+                    <div class="card-details">
+                        <div class="card-fig">
+                            <p>43</p>
+                        </div>
+
+                        <div class="card-chip">
+                            <p class="desc-icon-1">-10</p>
+
+                            <span class="material-symbols-outlined desc-icon-1"> trending_down </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">
+                        <p class="card-name">Pending Invoice</p>
+
+                        <span class="material-symbols-outlined desc-icon-2">inactive_order</span>
+
+                    </div>
+
+                    <div class="card-details">
+                        <div class="card-fig">
+                            <p>89</p>
+                        </div>
+
+                        <div class="card-chip">
+                            <p>-54%</p>
+
+                            <span class="material-symbols-outlined">trending_up</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">
+                        <p class="card-name">Overdue Invoice</p>
+
+                        <span class="material-symbols-outlined desc-icon-1">receipt_long_off</span>
+
+                    </div>
+
+                    <div class="card-details">
+                        <div class="card-fig">
+                            <p>16</p>
+                        </div>
+
+                        <div class="card-chip">
+                            <p class="desc-icon-1">-54%</p>
+
+                            <span class="material-symbols-outlined desc-icon-1">trending_up</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">
+                        <p class="card-name">Total Invoice Value</p>
+
+                        <span class="material-symbols-outlined desc-icon-3">wallet</span>
+                    </div>
+
+                    <div class="card-details">
+                        <div class="card-fig">
+                            <p>₦105, 521,900.00</p>
+                        </div>
+
+                        <div class="card-chip">
+                            <p class="desc-icon-1">-10</p>
+
+                            <span class="material-symbols-outlined desc-icon-1">trending_down</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-wrapper">
+                <form class="search-container">
+                    <span class="material-symbols-outlined search-icon">search</span>
+                    <input type="search" name="search" id="search" class="search" placeholder="Search for Orders, Customers...">
+                </form>
+
+                <div class="filter-btn-container">
+                    <div class="filter-btn">
+                        <span class="material-symbols-outlined">filter_list</span>
+                        <p>All Filter</p>
+                        <span class="material-symbols-outlined">stat_minus_1</span>
+                    </div>
+
+                    <div class="filter-btn">
+                        <span class="material-symbols-outlined">publish</span>
+                        <p>Export CSV</p>
+                    </div>
+
+                    <div class="filter-btn">
+                        <span class="material-symbols-outlined">download</span>
+                        <p>Download Report</p>
+                    </div>
+
+                    <div class="filter-btn filter-main">
+                        <span class="material-symbols-outlined">add_2</span>
+                        <p>Create New Invoice</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="filter-table-container">
+
+                <div class="filter-table">
+                    
+                    <div class="filter-top-container">
+                        <div class="table-header">  
+                            <p>Filter</p>
+                        </div>
+
+                        <form class="date-range">
+
+                            <p class="filter-label">Date Range</p>
+                            <div class="input-group">
+                                <div class="date">
+                                    <input type="text" name="date1" id="date1" class="date-field" placeholder="mm-dd-yyy">
+                                    <span class="material-symbols-outlined date-icon">calendar_month</span>
+                                </div>
+
+                                <div class="date">
+                                    <input type="text" name="date2" id="date2" class="date-field" placeholder="mm-dd-yyy">
+                                    <span class="material-symbols-outlined date-icon">calendar_month</span>
+                                </div>
+                            </div>
+
+                        </form>
+
+                        <div class="payment-status">
+                            <p class="filter-label">Payment Status</p>
+                            <div class="filter-btn">
+                                <p>All Statuses</p>
+                                <span class="material-symbols-outlined">stat_minus_1</span>
+                            </div>
+                        </div>
+
+                        <div class="payment-method">
+                            <p class="filter-label">Payment Method</p>
+                            <div class="filter-btn">
+                                <p>All Methods</p>
+                                <span class="material-symbols-outlined">stat_minus_1</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-btn">
+                            <span class="material-symbols-outlined">restart_alt</span>
+                            <p>All Statuses</p> 
+                    </div>
+
+                </div>
+
+
+                <div class="order-table">
+                    <div class="table-title">
+                        <div class="cell">
+                            <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                            <p>Invoice ID</p>
+                        </div>
+
+                        <div class="cell">
+                            <p>Customer Name</p>
+                        </div>
+
+                        <div class="cell">
+                            <p>Issue Date</p>
+                        </div>
+
+                        <div class="cell">
+                            <p>Due Date</p>
+                        </div>
+
+                        <div class="cell menu-cell">
+                            <p>Amount</p>
+                        </div>
+
+                        <div class="cell menu-cell">
+                            <p>Status</p>
+                        </div>
+
+                        <div class="cell menu-cell">
+                            <p>Action</p>
+                        </div>
+
+                    </div>
+
+                    <div class="table-wrapper">
+
+                    <div class="row">
+                            <div class="table-cell">
+                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                <p>INV-001</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>Victor Williamson</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <p>₦1, 521,900.00</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <div class="table-chip completed">
+                                    <p>Paid</p>
+                                </div>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                    </div>
+
+                    <div class="row grey-row">
+                            <div class="table-cell">
+                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                <p>INV-002</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>Gift Johnson</p>
+                            </div>
+
+                             <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <p>₦1, 521,900.00</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <div class="table-chip canceled">
+                                    <p>Overdue</p>
+                                </div>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                    </div>
+
+                    <div class="row">
+                            <div class="table-cell">
+                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                <p>INV-003</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>Emily Rodriguez</p>
+                            </div>
+
+                             <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <p>₦1, 521,900.00</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <div class="table-chip processing">
+                                    <p>Paused</p>
+                                </div>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                    </div>
+
+                    <div class="row grey-row">
+                            <div class="table-cell">
+                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                <p>INV-004</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>David Kim</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <p>₦1, 521,900.00</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <div class="table-chip pending">
+                                    <p>Paused</p>
+                                </div>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                    </div>
+
+                    <div class="row">
+                            <div class="table-cell">
+                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                <p>INV-005</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>Gift Johnson</p>
+                            </div>
+
+                             <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <p>₦1, 521,900.00</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <div class="table-chip canceled">
+                                    <p>Overdue</p>
+                                </div>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                    </div>
+
+                    <div class="row grey-row">
+                            <div class="table-cell">
+                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                <p>INV-006</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>Lisa Anderson</p>
+                            </div>
+
+                             <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <p>₦1, 521,900.00</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <div class="table-chip completed">
+                                    <p>Paid</p>
+                                </div>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                    </div>
+
+                    <div class="row">
+                            <div class="table-cell">
+                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                <p>INV-007</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>Abdul Mohammed</p>
+                            </div>
+
+                             <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <p>₦1, 521,900.00</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <div class="table-chip completed">
+                                    <p>Paid</p>
+                                </div>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                    </div>
+
+                    <div class="row grey-row">
+                            <div class="table-cell">
+                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                <p>INV-008</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>Ethan James</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <p>₦1, 521,900.00</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <div class="table-chip completed">
+                                    <p>Paid</p>
+                                </div>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                    </div>
+
+                    <div class="row">
+                            <div class="table-cell">
+                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                <p>INV-009</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>Olivia Gray</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <p>₦1, 521,900.00</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <div class="table-chip canceled">
+                                    <p>Overdue</p>
+                                </div>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                    </div>
+
+                    <div class="row grey-row">
+                            <div class="table-cell">
+                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                <p>INV-0010</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>Lucas Anderson</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <p>₦1, 521,900.00</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <div class="table-chip completed">
+                                    <p>Paid</p>
+                                </div>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                    </div>
+
+                    <div class="row">
+                            <div class="table-cell">
+                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                <p>INV-0011</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>Grace Turner</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <p>₦1, 521,900.00</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <div class="table-chip completed">
+                                    <p>Paid</p>
+                                </div>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                    </div>
+
+                    <div class="row grey-row">
+                            <div class="table-cell">
+                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                <p>INV-0012</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>Micheal Brooks</p>
+                            </div>
+
+                             <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell">
+                                <p>2/15/2024</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <p>₦1, 521,900.00</p>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <div class="table-chip completed">
+                                    <p>Paid</p>
+                                </div>
+                            </div>
+
+                            <div class="table-cell menu-cell">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+                    </div>
+
+                    </div>
+
+                    <div class="pagination-wrapper">
+
+                        <div class="direction">
+                            <div class="previous">
+                                <span class="material-symbols-outlined">arrow_back</span>
+                                <p>Previous</p>
+                            </div>
+
+                            <div class="next">
+                                <p>Next</p>
+                                <span class="material-symbols-outlined">arrow_forward</span>
+                            </div>
+                        </div>
+
+                        <div class="pages">
+                            <div class="num act-num">
+                                <p>1</p>
+                            </div>
+
+                            <div class="num">
+                                <p>2</p>
+                            </div>
+
+                            <div class="num">
+                                <p>3</p>
+                            </div>
+
+                            <div class="num">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </div>
+
+                            <div class="num">
+                                <p>9</p>
+                            </div>
+
+                            <div class="num">
+                                <p>10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+   <!-- External Script -->
+    <script src="invoice.js"></script>
+
+</body>
+</html>
