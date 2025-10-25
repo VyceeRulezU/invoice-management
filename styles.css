@@ -652,7 +652,7 @@
     z-index: 99;
 }
 
-@media (min-width: 1000px) and (max-width: 1700px) {
+@media (min-width: 1000px) {
 
     .body-wrapper {
     padding: 1rem;
