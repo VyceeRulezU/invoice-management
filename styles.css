@@ -409,7 +409,7 @@
     payment-method
 }
 
-.order-table{
+.order-table {
     width: 85%;
     height: 100%;
     display: flex;
@@ -452,6 +452,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    row-gap: 1rem;
     padding: 0.8rem 0;
     overflow-y: auto;
 }
@@ -650,6 +651,19 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 99;
+}
+
+.row-selected {
+    border-radius: 1rem;
+    border: 1px solid #61B763;
+}
+
+.title-check{
+    cursor: pointer;
+}
+
+.title-check.selected {
+    color: #61B763;
 }
 
 @media (min-width: 1000px) {
@@ -1385,6 +1399,128 @@
         row-gap: 1rem;
     }
 
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex-basis: 100%;
+    }
+
+    .pagination-wrapper {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .body-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .title-bar {
+        align-items: center;
+        position: fixed;
+        width: 90%;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 100;
+    }
+
+    .content-wrapper {
+        padding-top: 8rem;
+        overflow: auto;
+        height: auto;
+    }
+
+    .profile-container {
+        display: none;
+    }
+
+    .search-container {
+        display: none;
+    }
+
+    .card-wrapper {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 0.5rem);
+    }
+
+    .filter-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1rem;
+    }
+
+    .filter-btn-container {
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+
+    .order-table {
+        width: 100%;
+        overflow-x: auto;
+        height: fit-content;
+        padding-bottom: 8rem;
+    }
+
+    .filter-table-container{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .filter-btn-container{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .filter-btn{
+        flex: 1 1 calc(50% - 0.5rem);
+        justify-content: center;
+    }
+
+    .filter-table{
+        width: 100%;
+        flex-direction: column;
+        row-gap: 1rem;
+        overflow-x: auto;
+        padding: 1rem;
+    }
+
+    .table-title {
+        width: max-content;
+    }
+
+    .table-wrapper {
+        width: max-content;
+        height: fit-content;
+    }
+
+    .pagination-wrapper {
+        width: 90%;
+        border-radius: 1rem;
+        background-color: white;
+        position: fixed;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        row-gap: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
