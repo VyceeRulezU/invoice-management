@@ -287,6 +287,45 @@
     align-items: center;
 }
 
+
+.dd-filter-btn{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    border: solid 1px #f6f6f6;
+    border-radius: 0.8rem;
+}
+
+.dd-filter-btn select {
+    width: 10rem;
+    padding: 10px 12px;
+    border: 0px solid #d1d5db;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 1rem;
+    color: #8E8E8E;
+    -webkit-appearance: none;
+    
+}
+
+.dd-filter-btn select:focus {
+    outline: none;
+    border: solid 1px #61B763;
+    /* border-color: #6366f1; */
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.12);
+    color: #222222;
+}
+
+.filter-chevron{
+    position: absolute;
+    right: 8px;
+}
+
+
+
 .filter-btn{
     display: flex;
     flex-direction: row;
@@ -399,14 +438,44 @@
     right: 1rem;
 }
 
-.payment-status{
+.form-group{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    position: relative;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #f6f6f6;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 0.8rem;
+    color: #8E8E8E;
+    -webkit-appearance: none;
+    
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.12);
+    color: #222222;
+}
+
+.dropdown-icon{
+  position: absolute;
+  right: 10px;
+  top: 38px;
+  font-weight: 100;
+  color: #8E8E8E;
+}
+
+.payment-status, .payment-method{
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-}
-
-.payment-method{
-    payment-method
 }
 
 .order-table {
@@ -659,7 +728,7 @@
 }
 
 .title-check{
-    cursor: pointer;
+    cursor: pointer; 
 }
 
 .title-check.selected {

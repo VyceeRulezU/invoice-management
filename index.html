@@ -236,12 +236,27 @@
                     <input type="search" name="search" id="search" class="search" placeholder="Search for Orders, Customers...">
                 </form>
 
+                
+
                 <div class="filter-btn-container">
-                    <div class="filter-btn">
+
+                    <div class="dd-filter-btn ">
+                            <!-- <label for="role" class="filter-label">Payment Status</label> -->
+                            <select id="role" name="role" required>
+                                <option value="" disabled selected>All Filter</option>
+                                <option value="student">Paid</option>
+                                <option value="teacher">Processing</option>
+                                <option value="parent">Pending</option>
+                                <option value="other" class="canceled">Overdue</option>
+                            </select>
+                            <span class="material-symbols-outlined filter-chevron">keyboard_arrow_down</span>
+                        </div>
+
+                    <!-- <div class="filter-btn">
                         <span class="material-symbols-outlined">filter_list</span>
                         <p>All Filter</p>
                         <span class="material-symbols-outlined">stat_minus_1</span>
-                    </div>
+                    </div> -->
 
                     <div class="filter-btn">
                         <span class="material-symbols-outlined">publish</span>
@@ -287,7 +302,32 @@
 
                         </form>
 
-                        <div class="payment-status">
+                        <div class="form-group">
+                            <label for="role" class="filter-label">Payment Status</label>
+                            <select id="role" name="role" required>
+                                <option value="" disabled selected>Select Payment Status</option>
+                                <option value="student">Completed</option>
+                                <option value="teacher">Processing</option>
+                                <option value="parent">Pending</option>
+                                <option value="other" class="canceled">Declined</option>
+                            </select>
+                            <span class="material-symbols-outlined dropdown-icon">keyboard_arrow_down</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="role" class="filter-label">Payment Method</label>
+                            <select id="role" name="role" required>
+                                <option value="" disabled selected>Select Payment Method</option>
+                                <option value="student">Cash</option>
+                                <option value="teacher">Bank Transfer</option>
+                                <option value="parent">Card</option>
+                                <option value="other" class="canceled">Bank Draft</option>
+                            </select>
+                            <span class="material-symbols-outlined dropdown-icon">keyboard_arrow_down</span>
+                        </div>
+
+
+                        <!-- <div class="payment-status">
                             <p class="filter-label">Payment Status</p>
                             <div class="filter-btn">
                                 <p>All Statuses</p>
@@ -301,7 +341,7 @@
                                 <p>All Methods</p>
                                 <span class="material-symbols-outlined">stat_minus_1</span>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="filter-btn">
@@ -314,6 +354,7 @@
 
                 <div class="order-table">
                     <div class="table-title">
+
                         <div class="cell">
                             <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
                             <p>Invoice ID</p>
@@ -347,444 +388,444 @@
 
                     <div class="table-wrapper">
 
-                    <div class="row">
-                            <div class="table-cell">
-                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
-                                <p>INV-001</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>Victor Williamson</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <p>₦1, 521,900.00</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <div class="table-chip completed">
-                                    <p>Paid</p>
+                        <div class="row">
+                                <div class="table-cell">
+                                    <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                    <p>INV-001</p>
                                 </div>
-                            </div>
 
-                            <div class="table-cell menu-cell">
-                                <span class="material-symbols-outlined">more_horiz</span>
-                            </div>
-                    </div>
-
-                    <div class="row grey-row">
-                            <div class="table-cell">
-                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
-                                <p>INV-002</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>Gift Johnson</p>
-                            </div>
-
-                             <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <p>₦1, 521,900.00</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <div class="table-chip canceled">
-                                    <p>Overdue</p>
+                                <div class="table-cell">
+                                    <p>Victor Williamson</p>
                                 </div>
-                            </div>
 
-                            <div class="table-cell menu-cell">
-                                <span class="material-symbols-outlined">more_horiz</span>
-                            </div>
-                    </div>
-
-                    <div class="row">
-                            <div class="table-cell">
-                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
-                                <p>INV-003</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>Emily Rodriguez</p>
-                            </div>
-
-                             <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <p>₦1, 521,900.00</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <div class="table-chip processing">
-                                    <p>Paused</p>
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
                                 </div>
-                            </div>
 
-                            <div class="table-cell menu-cell">
-                                <span class="material-symbols-outlined">more_horiz</span>
-                            </div>
-                    </div>
-
-                    <div class="row grey-row">
-                            <div class="table-cell">
-                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
-                                <p>INV-004</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>David Kim</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <p>₦1, 521,900.00</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <div class="table-chip pending">
-                                    <p>Paused</p>
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
                                 </div>
-                            </div>
 
-                            <div class="table-cell menu-cell">
-                                <span class="material-symbols-outlined">more_horiz</span>
-                            </div>
-                    </div>
-
-                    <div class="row">
-                            <div class="table-cell">
-                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
-                                <p>INV-005</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>Gift Johnson</p>
-                            </div>
-
-                             <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <p>₦1, 521,900.00</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <div class="table-chip canceled">
-                                    <p>Overdue</p>
+                                <div class="table-cell menu-cell">
+                                    <p>₦1, 521,900.00</p>
                                 </div>
-                            </div>
 
-                            <div class="table-cell menu-cell">
-                                <span class="material-symbols-outlined">more_horiz</span>
-                            </div>
-                    </div>
-
-                    <div class="row grey-row">
-                            <div class="table-cell">
-                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
-                                <p>INV-006</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>Lisa Anderson</p>
-                            </div>
-
-                             <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <p>₦1, 521,900.00</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <div class="table-chip completed">
-                                    <p>Paid</p>
+                                <div class="table-cell menu-cell">
+                                    <div class="table-chip completed">
+                                        <p>Paid</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="table-cell menu-cell">
-                                <span class="material-symbols-outlined">more_horiz</span>
-                            </div>
-                    </div>
-
-                    <div class="row">
-                            <div class="table-cell">
-                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
-                                <p>INV-007</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>Abdul Mohammed</p>
-                            </div>
-
-                             <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <p>₦1, 521,900.00</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <div class="table-chip completed">
-                                    <p>Paid</p>
+                                <div class="table-cell menu-cell">
+                                    <span class="material-symbols-outlined">more_horiz</span>
                                 </div>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <span class="material-symbols-outlined">more_horiz</span>
-                            </div>
-                    </div>
-
-                    <div class="row grey-row">
-                            <div class="table-cell">
-                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
-                                <p>INV-008</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>Ethan James</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <p>₦1, 521,900.00</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <div class="table-chip completed">
-                                    <p>Paid</p>
-                                </div>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <span class="material-symbols-outlined">more_horiz</span>
-                            </div>
-                    </div>
-
-                    <div class="row">
-                            <div class="table-cell">
-                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
-                                <p>INV-009</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>Olivia Gray</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <p>₦1, 521,900.00</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <div class="table-chip canceled">
-                                    <p>Overdue</p>
-                                </div>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <span class="material-symbols-outlined">more_horiz</span>
-                            </div>
-                    </div>
-
-                    <div class="row grey-row">
-                            <div class="table-cell">
-                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
-                                <p>INV-0010</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>Lucas Anderson</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <p>₦1, 521,900.00</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <div class="table-chip completed">
-                                    <p>Paid</p>
-                                </div>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <span class="material-symbols-outlined">more_horiz</span>
-                            </div>
-                    </div>
-
-                    <div class="row">
-                            <div class="table-cell">
-                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
-                                <p>INV-0011</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>Grace Turner</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <p>₦1, 521,900.00</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <div class="table-chip completed">
-                                    <p>Paid</p>
-                                </div>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <span class="material-symbols-outlined">more_horiz</span>
-                            </div>
-                    </div>
-
-                    <div class="row grey-row">
-                            <div class="table-cell">
-                                <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
-                                <p>INV-0012</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>Micheal Brooks</p>
-                            </div>
-
-                             <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell">
-                                <p>2/15/2024</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <p>₦1, 521,900.00</p>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <div class="table-chip completed">
-                                    <p>Paid</p>
-                                </div>
-                            </div>
-
-                            <div class="table-cell menu-cell">
-                                <span class="material-symbols-outlined">more_horiz</span>
-                            </div>
-                    </div>
-
-                    </div>
-
-                    <div class="pagination-wrapper">
-
-                        <div class="direction">
-                            <div class="previous">
-                                <span class="material-symbols-outlined">arrow_back</span>
-                                <p>Previous</p>
-                            </div>
-
-                            <div class="next">
-                                <p>Next</p>
-                                <span class="material-symbols-outlined">arrow_forward</span>
-                            </div>
                         </div>
 
-                        <div class="pages">
-                            <div class="num act-num">
-                                <p>1</p>
+                        <div class="row grey-row">
+                                <div class="table-cell">
+                                    <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                    <p>INV-002</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>Gift Johnson</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <p>₦1, 521,900.00</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <div class="table-chip canceled">
+                                        <p>Overdue</p>
+                                    </div>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <span class="material-symbols-outlined">more_horiz</span>
+                                </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="table-cell">
+                                    <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                    <p>INV-003</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>Emily Rodriguez</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <p>₦1, 521,900.00</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <div class="table-chip processing">
+                                        <p>Paused</p>
+                                    </div>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <span class="material-symbols-outlined">more_horiz</span>
+                                </div>
+                        </div>
+
+                        <div class="row grey-row">
+                                <div class="table-cell">
+                                    <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                    <p>INV-004</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>David Kim</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <p>₦1, 521,900.00</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <div class="table-chip pending">
+                                        <p>Paused</p>
+                                    </div>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <span class="material-symbols-outlined">more_horiz</span>
+                                </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="table-cell">
+                                    <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                    <p>INV-005</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>Gift Johnson</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <p>₦1, 521,900.00</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <div class="table-chip canceled">
+                                        <p>Overdue</p>
+                                    </div>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <span class="material-symbols-outlined">more_horiz</span>
+                                </div>
+                        </div>
+
+                        <div class="row grey-row">
+                                <div class="table-cell">
+                                    <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                    <p>INV-006</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>Lisa Anderson</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <p>₦1, 521,900.00</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <div class="table-chip completed">
+                                        <p>Paid</p>
+                                    </div>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <span class="material-symbols-outlined">more_horiz</span>
+                                </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="table-cell">
+                                    <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                    <p>INV-007</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>Abdul Mohammed</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <p>₦1, 521,900.00</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <div class="table-chip completed">
+                                        <p>Paid</p>
+                                    </div>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <span class="material-symbols-outlined">more_horiz</span>
+                                </div>
+                        </div>
+
+                        <div class="row grey-row">
+                                <div class="table-cell">
+                                    <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                    <p>INV-008</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>Ethan James</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <p>₦1, 521,900.00</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <div class="table-chip completed">
+                                        <p>Paid</p>
+                                    </div>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <span class="material-symbols-outlined">more_horiz</span>
+                                </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="table-cell">
+                                    <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                    <p>INV-009</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>Olivia Gray</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <p>₦1, 521,900.00</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <div class="table-chip canceled">
+                                        <p>Overdue</p>
+                                    </div>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <span class="material-symbols-outlined">more_horiz</span>
+                                </div>
+                        </div>
+
+                        <div class="row grey-row">
+                                <div class="table-cell">
+                                    <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                    <p>INV-0010</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>Lucas Anderson</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <p>₦1, 521,900.00</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <div class="table-chip completed">
+                                        <p>Paid</p>
+                                    </div>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <span class="material-symbols-outlined">more_horiz</span>
+                                </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="table-cell">
+                                    <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                    <p>INV-0011</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>Grace Turner</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <p>₦1, 521,900.00</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <div class="table-chip completed">
+                                        <p>Paid</p>
+                                    </div>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <span class="material-symbols-outlined">more_horiz</span>
+                                </div>
+                        </div>
+
+                        <div class="row grey-row">
+                                <div class="table-cell">
+                                    <span class="material-symbols-outlined title-check">check_box_outline_blank</span>
+                                    <p>INV-0012</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>Micheal Brooks</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell">
+                                    <p>2/15/2024</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <p>₦1, 521,900.00</p>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <div class="table-chip completed">
+                                        <p>Paid</p>
+                                    </div>
+                                </div>
+
+                                <div class="table-cell menu-cell">
+                                    <span class="material-symbols-outlined">more_horiz</span>
+                                </div>
+                        </div>
+
+                        </div>
+
+                        <div class="pagination-wrapper">
+
+                            <div class="direction">
+                                <div class="previous">
+                                    <span class="material-symbols-outlined">arrow_back</span>
+                                    <p>Previous</p>
+                                </div>
+
+                                <div class="next">
+                                    <p>Next</p>
+                                    <span class="material-symbols-outlined">arrow_forward</span>
+                                </div>
                             </div>
 
-                            <div class="num">
-                                <p>2</p>
-                            </div>
+                            <div class="pages">
+                                <div class="num act-num">
+                                    <p>1</p>
+                                </div>
 
-                            <div class="num">
-                                <p>3</p>
-                            </div>
+                                <div class="num">
+                                    <p>2</p>
+                                </div>
 
-                            <div class="num">
-                                <span class="material-symbols-outlined">more_horiz</span>
-                            </div>
+                                <div class="num">
+                                    <p>3</p>
+                                </div>
 
-                            <div class="num">
-                                <p>9</p>
-                            </div>
+                                <div class="num">
+                                    <span class="material-symbols-outlined">more_horiz</span>
+                                </div>
 
-                            <div class="num">
-                                <p>10</p>
+                                <div class="num">
+                                    <p>9</p>
+                                </div>
+
+                                <div class="num">
+                                    <p>10</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
                 </div>
 
             </div>
