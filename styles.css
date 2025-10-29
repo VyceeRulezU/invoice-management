@@ -299,15 +299,20 @@
     border-radius: 0.8rem;
 }
 
+.dd-filter-btn:hover{
+    border-color: #61B763;
+}
+
 .dd-filter-btn select {
     width: 10rem;
-    padding: 10px 12px;
+    padding: 0.5rem 1rem;
     border: 0px solid #d1d5db;
-    border-radius: 8px;
+    border-radius: 0.8rem;
     background: #fff;
     font-size: 1rem;
     color: #8E8E8E;
     -webkit-appearance: none;
+    cursor: pointer;
     
 }
 
@@ -322,6 +327,7 @@
 .filter-chevron{
     position: absolute;
     right: 8px;
+    color: #8E8E8E;
 }
 
 
@@ -457,11 +463,16 @@
     
 }
 
+
 .form-group select:focus {
     outline: none;
     border-color: #6366f1;
     box-shadow: 0 0 0 3px rgba(99,102,241,0.12);
     color: #222222;
+}
+
+.form-group select:hover{
+    border-color: #61B763;
 }
 
 .dropdown-icon{
